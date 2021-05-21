@@ -1,8 +1,24 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="pl.lublin.wsei.java.cwiczenia.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lublin.wsei.java.cwiczenia.Controller">
+   <children>
+      <Button layoutX="101.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnOpenFileAction" text="Otwórz plik" />
+      <Label fx:id="lbFile" layoutX="198.0" layoutY="67.0" prefHeight="18.0" prefWidth="559.0" style="-fx-font-style: italic;" />
+      <ListView fx:id="lstInfografiki" layoutX="85.0" layoutY="138.0" prefHeight="410.0" prefWidth="378.0" />
+      <Label layoutX="478.0" layoutY="148.0" prefHeight="18.0" prefWidth="302.0" text="Miniaturka" />
+      <Text layoutX="85.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Infografiki" />
+      <Text layoutX="85.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adres strony" />
+      <TextField fx:id="txtAdresStrony" layoutX="85.0" layoutY="600.0" prefHeight="26.0" prefWidth="588.0" />
+      <ImageView fx:id="imgMiniaturka" fitHeight="251.0" fitWidth="319.0" layoutX="473.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="709.0" layoutY="433.0" mnemonicParsing="false" onAction="#btnPokazOnAction" text="Pokaż" />
+      <Button fx:id="btnPrzejdzDoStrony" layoutX="705.0" layoutY="601.0" mnemonicParsing="false" onAction="#btnZaladujStrone" text="Załaduj" />
+   </children>
+</AnchorPane>

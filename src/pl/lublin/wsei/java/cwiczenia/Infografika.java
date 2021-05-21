@@ -69,4 +69,6 @@ public class Infografika {
         System.out.println("wymiary: " + szerokosc + "X" + wysokosc);
         System.out.println();
     }
+
+
 }
